@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WoScope HTML</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="woscope.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <h4><a target="_blank" href="https://github.com/m1el/woscope">Made with WoScope!</a></h4>
+        <div id="slot-controls">
+            <hr>
+            <audio id="audio-player" controls></audio><br/>
+            <input id="audio-input" type="file" accept="audio/*"/><br/>
+            <hr>
+            <div>
+                <input type="color" id="beam-color" value="#00BB00"/>
+                <label for="beam-color">Beam Color</label>
+            </div>
+            <div>
+                <input type="range" id="beam-width" min="0.005" max="0.05" step="0.001" value="0.01"/>
+                <label for="beam-width">Beam Width (focus?)</label>
+            </div>
+            <hr>
+        </div>
+        <div id="slot-canvas"></div>
+    </body>
+</html>
